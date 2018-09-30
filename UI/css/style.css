@@ -1,0 +1,659 @@
+* {
+    box-sizing: border-box;
+}
+html, body, .container {
+    margin: 0px;
+    padding: 0px;
+    min-height: 794px;
+    width: 100%;
+    min-width: 1235px;
+    font-family: "Muli", "Merriweather", "Georgia", serif;
+}
+
+.top-nav {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 1px 0px lightgrey;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.home-hero {
+    height: 150px;
+    width: inherit;
+    background-image: url('../img/foodbackg.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 155px;
+    width: 152px;
+    margin-top: -34px;
+    background-image: url(../img/new-logo.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.logo-box {
+    height: inherit;
+    width: 70%;
+    display: flex;
+}
+
+.menu {
+    margin-right: 54px;
+    margin-top: 5px;
+    color: #625f5f;
+}
+
+.menu-list-ul {
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+}
+
+
+.menu-list {
+    margin-right: 54px;
+}
+
+#auth-box {
+    height: inherit;
+    width: 300px;
+    display: flex;
+    padding-left: 122px;
+    position: relative;
+    display: inline-block;
+}
+
+#user-auth-box {
+    height: inherit;
+    width: 300px;
+    display: flex;
+    padding-top: 17px;
+    padding-left: 157px;
+}
+
+.btn {
+    height: 40px;
+    width: 126px;
+    float: right;
+    margin-top: 9px;
+    font-weight: 600;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 11px;
+    color: black;
+    padding-top: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e62e22;
+    color: white;
+}
+
+.order-btn:hover {
+    background-color: #e62e22;
+    color: white;
+}
+
+.sign-btn:hover {
+    background-color: #e62e22;
+    color: white;
+}
+
+.order-btn {
+    height: 40px;
+    width: 126px;
+    margin-top: 9px;
+    font-weight: 600;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 11px;
+    color: black;
+    padding-top: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-red {
+  height: 33px;
+  width: 56px;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  background-color: #e62e22;
+}
+
+.sign-btn-box {
+  text-align: -webkit-center;
+}
+
+.sign-btn {
+  height: 33px;
+  width: 135px;
+  margin-top: 9px;
+  background-color: white;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 11px;
+  color: black;
+  padding-top: 0px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;    
+}
+
+.btn-space {
+    height: 80px;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.write-hero {
+    height: inherit;
+    width: 573px;
+    margin-left: 10px;
+    padding-top: 80px;
+}
+
+.eat-hero {
+    color:  #3d3d3d;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.eat-ready {
+    color: #f7ad07;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.eat-bold {
+    color: #828186;
+    font-size: 49px;
+    height: 60px;
+    font-weight: 600;
+}
+
+.we-deliver {
+    height: 295px;
+    width: 100%;
+    padding-top: 34px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: -webkit-center;
+    background-color: #f6f6f6;
+}
+
+.we-deliver-in {
+    height: 250px;
+    width: 600px;
+    display: flex;
+}
+
+.deliver-box {
+    height: inherit;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.deliver-img {
+    height: 200px;
+    width: inherit;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url('http://a57.foxnews.com/images.foxnews.com/content/fox-news/food-drink/2018/02/06/fast-food-restaurants-may-be-healthier-than-five-star-restaurants/_jcr_content/par/featured_image/media-0.img.jpg/931/524/1517968966228.jpg?ve=1&tl=1&text=big-top-image');
+    background-size: 75%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
+
+.deliver-img-od {
+    background-image: url('https://www.gurutechnolabs.com/wp-content/uploads/2018/07/Restaurant-App-Development.png');
+    background-size: 43%;
+}
+
+.deliver-img-del {
+    background-image: url('../img/deliveryboy.png');
+    background-size: 81%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.deliver-title {
+    height: 50px;
+    width: inherit;
+    padding-top: 13px;
+    color: black;
+    font-weight: 600;
+}
+
+.popular {
+    height: 380px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: -webkit-center;
+}
+
+.write-del {
+    width: 100%;
+    height: inherit;
+    text-align: center;
+}
+
+.hero-del {
+    background-image: url('../img/deliveryboy.png');
+    background-size: inherit;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.del-text {
+    color: #2e2929;
+}
+
+.variety-header {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 70px;
+}
+
+.variety-box {
+    height: inherit;
+    width: 266px;
+    text-align: -webkit-center;
+    margin-right: 25px;
+    cursor: pointer;
+    background-color: #f94c06;
+}
+
+.variety-box:hover {
+    box-shadow: 0px 0px 10px 4px lightgrey;
+}
+
+.variety-kind {
+    height: 300px;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 85px;
+}
+
+.variety-img {
+    height: 200px;
+    border-top-left-radius: 50px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAbthujPrgNfSyFwov8OGvQ9gIxumLP_wWsm5z1QwmqiF5fOfq1Q');
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 0px 1px lightgrey;
+}
+
+.variety-btm {
+    height: 100px;
+    width: inherit;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 0px 1px lightgrey;
+}
+
+.food-name, .food-price {
+    height: 50px;
+    width: inherit;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.food-price {
+    color: #e62e22;
+}
+
+.meal-container {
+    min-height: 260px;
+    width: 1004px;
+    background: rgba(147, 148, 161, 0.6);
+}
+
+.meal-box {
+    text-align: -webkit-center;
+    background-image: url('../img/foodbackg.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.meal-box-header {
+    height: 80px;
+    width: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: rgba(150, 150, 150, 0.9) 1px 1px 1px;
+    color: whitesmoke;
+    padding-top: 28px;
+}
+
+.meal-box-content {
+    width: 846px;
+    min-height: 153px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.meal-info {
+    height: inherit;
+    width: 248px;
+}
+
+.meal-info-title, .meal-info-price, .meal-info-cart {
+    height: 50px;
+    width: inherit;
+    font-size: 19px;
+    font-weight: bold;
+    padding-top: 12px;
+    background-color: whitesmoke;
+}
+
+.meal-info-price {
+    color: #f94705;
+}
+
+.meal-info-cart {
+    background-color: #b4a8a6;
+    cursor: pointer;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-color: lightgray;
+}
+
+.meal-single {
+    height: 150px;
+    width: 398px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    box-shadow: 0px 0px 1px 1px lightgrey;
+    background-color: white;
+}
+
+.meal-single:hover {
+    box-shadow: 0px 0px 10px 4px lightgrey;
+}
+
+.meal-img {
+    height: inherit;
+    width: 150px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx67fjcn2WFalc0g6vc-8TG0qaEwXtZbw5uBS5LBT-KYTHJz7ZSg');
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.view-more {
+    height: 100px;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.view-more-btn {
+    height: 56PX;
+    width: 198px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-top: 16px;
+    background-color: whitesmoke;
+}
+
+.contact-box {
+    height: 225px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 24px;
+    text-align: -webkit-center;
+}
+
+.cart-icon {
+    margin-right: 20px;
+    padding-top: 18px;
+    cursor: pointer;
+}
+
+
+.contact-box-fix {
+    height: inherit;
+    width: 300px;
+    padding-left: 17px;
+    padding-top: 20px;
+    text-align: initial;
+}
+
+.contact-header {
+    height: 50px;
+    width: inherit;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+.contact-content {
+    height: 151px;
+    width: inherit;
+    padding-top: 10px;
+}
+
+.contact-mini {
+    width: inherit;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.fa {
+    color: #a42715;
+    font-size: 20px;
+}
+
+.fa-copyright, .footer-text {
+    color: white;
+}
+
+footer {
+    height: 80px;
+    background-color: #a42715;
+    text-align: center;
+    padding-top: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: #5b6163;
+}
+
+.food-hero {
+    height: 300px;
+    width: 100%;
+    background-image: url('../img/spag.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.order-header {
+    height: inherit;
+    width: 400px;
+    display: flex;
+    font-size: 34px;
+    font-weight: 600;
+    padding-left: 57px;
+}
+
+.place-order {
+    height: 80px;
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    text-align: -webkit-center;
+}
+
+.material-icon {
+    height: inherit;
+    width: 58px;
+    background-image: url('../img/food.png');
+    background-position: 50%;
+    background-size: auto;
+    background-repeat: no-repeat
+}
+
+.title-header {
+    padding-top: 23px;
+}
+
+.order-content {
+    min-height: 500px;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.order-box {
+    min-height: inherit;
+    width: 1000px;
+    display: flex;
+}
+
+.order-box-left {
+    min-height: inherit;
+    width: 700px;
+}
+
+.order-box-right {
+    min-height: inherit;
+    width: 300px;
+    box-shadow: 0px 0px 18px 1px lightgrey;
+}
+
+.box-right-top {
+    height: 80px;
+    width: inherit;
+    text-align: -webkit-center;
+}
+
+.cart-header {
+    height: inherit;
+    width: 80px;
+    background-image: url('../img/cart.png');
+    background-position: 50%;
+    background-size: auto;
+    background-repeat: no-repeat
+}
+
+.cart-items {
+    min-height: 100px;
+    width: inherit;
+}
+
+.yum-content {
+    min-height: 250px;
+    width: inherit;
+    text-align: left;
+}
+
+.yum-header {
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 16px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.yum-child {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-color: lightgray;
+    border-top-style: solid;
+    border-top-width: thin;
+}
+
+.yum-img1 {
+    margin-top: 4px;
+    height: 91px;
+    width: 100px;
+    background-image: url(http://www.allnigerianrecipes.com/images/nigerian-fried-rice1.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yum-img2 {
+    margin-top: 4px;
+    height: 91px;
+    width: 100px;
+    background-image: url('https://food-images.files.bbci.co.uk/food/recipes/spaghetti_bolognese_with_23409_16x9.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yum-name {
+    height: inherit;
+    width: 400px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.yum-price {
+    height: inherit;
+    width: 200px;
+    padding-left: 94px;
+    padding-top: 73px;
+    display: flex;
+}
+
+.add-icon {
+    color: #e62e22;
+    cursor: pointer;
+}
+
+.add-box {
+    padding-top: 1px;
+}
+
+.amount {
+    padding-top: 3px;
+}
+
+#click-me:hover {
+    color: #e62e22;
+}

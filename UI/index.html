@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>stack-lite</title>
+  <link rel="stylesheet" type="text/css" href="../UI/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../UI/css/modal.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-nav" id="myHeader">
+      <div class="logo-box">
+        <div class="logo"></div>
+        <div class="menu">
+          <ul class="menu-list-ul">
+            <li class="menu-list">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="menu-list">
+              <a href="./order.html">Food</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="auth-box">
+          <i class="material-icons cart-icon">shopping_cart</i>
+        <div class="btn" onclick="openModal()">Login/Sign up</div>
+      </div>
+    </div>
+    <div class="home-hero"></div>
+
+
+    <div class="we-deliver">
+      <div class="we-deliver-in">
+        <div class="deliver-box">
+          <div class="deliver-img"></div>
+          <div class="deliver-title">Select Food</div>
+        </div>
+        <div class="deliver-box">
+          <div class="deliver-img deliver-img-od"></div>
+          <div class="deliver-title">Order Food</div>
+        </div>
+        <div class="deliver-box">
+          <div class="deliver-img deliver-img-del"></div>
+          <div class="deliver-title">Delivery</div>
+        </div>
+      </div>
+    </div>
+    <div class="meal-box">
+      <div class="meal-container">
+        <div class="meal-box-header">Menu</div>
+        <div class="meal-box-content">
+          <div class="meal-single">
+            <div class="meal-img"></div>
+            <div class="meal-info">
+              <div class="meal-info-title">Bugger</div>
+              <div class="meal-info-price">#500</div>
+              <div class="meal-info-cart">
+                <div class="to-cart-btn">Add to cart</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meal-single">
+            <div class="meal-img"></div>
+            <div class="meal-info">
+              <div class="meal-info-title">Bugger</div>
+              <div class="meal-info-price">#500</div>
+              <div class="meal-info-cart">
+                <div class="to-cart-btn">Add to cart</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meal-single">
+            <div class="meal-img"></div>
+            <div class="meal-info">
+              <div class="meal-info-title">Bugger</div>
+              <div class="meal-info-price">#500</div>
+              <div class="meal-info-cart">
+                <div class="to-cart-btn">Add to cart</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meal-single">
+            <div class="meal-img"></div>
+            <div class="meal-info">
+              <div class="meal-info-title">Bugger</div>
+              <div class="meal-info-price">#500</div>
+              <div class="meal-info-cart">
+                <div class="to-cart-btn">Add to cart</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meal-single">
+            <div class="meal-img"></div>
+            <div class="meal-info">
+              <div class="meal-info-title">Bugger</div>
+              <div class="meal-info-price">#500</div>
+              <div class="meal-info-cart">
+                <div class="to-cart-btn">Add to cart</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meal-single">
+            <div class="meal-img"></div>
+            <div class="meal-info">
+              <div class="meal-info-title">Bugger</div>
+              <div class="meal-info-price">#500</div>
+              <div class="meal-info-cart">
+                <div class="to-cart-btn">Add to cart</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-more">
+            <div class="view-more-btn">VIEW MORE >></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-box-fix">
+        <div class="contact-header">CONTACT US</div>
+        <div class="contact-content">
+          <div class="contact-mini">
+            <i class="fa fa-map-marker"></i>
+            <div class="contact-text">24b Exodus lane, besides Andela Epic Tower, Ilupeju, Lagos</div>
+          </div>
+          <div class="contact-mini">
+            <i class="fa fa-phone"></i>
+            <div class="contact-text">+2348138776199, +2348011144428</div>
+          </div>
+          <div class="contact-mini">
+            <i class="fa fa-envelope"></i>
+            <div class="contact-text">fastfoodfast@fsf.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+  <div id="modal" class="modal-box">
+    <div class="modal-box-content">
+      <div class="modal-class-log">
+        <div class="modal-class-one" id="modal-class-one-log" onclick="openModal()">Login</div>
+        <div class="modal-class-one" id="modal-class-one-reg" onclick="modifyModal()">Sign up</div>
+      </div>
+      <div class="avatar-hero">
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02t10e803wAb6yvCxp94Sv9XxVMtqOFDganij2UVcDK4uqUNB" alt="Avatar"
+          class="avatar">
+      </div>
+
+      <form class="form-box" action="/action_page.php">
+        <div class="form-section">
+          <label>
+            <b>Email</b>
+          </label>
+          <input class="form-input form-b-space" type="email" placeholder="@gmail.com" name="eml" required>
+          <label>
+            <b>Password</b>
+          </label>
+          <input class="form-input" type="password" placeholder="Enter Password" name="psw" required>
+          <div class="sign-btn-box">
+            <button class="sign-btn" type="submit">Login</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="form-box">
+        <button onclick="closeModal()" type="button" class="btn-red">Cancel</button>
+        Are you an admin? click
+        <a id="click-me" href="./login.html">here...</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="modal-two" class="modal-box">
+    <div class="modal-box-content">
+      <div class="modal-class-log">
+        <div class="modal-class-one" id="modal-class-one-log" onclick="openModal()">Login</div>
+        <div class="modal-class-one" id="modal-class-one-reg" onclick="modifyModal()">Sign up</div>
+      </div>
+
+      <div class="acct-head">
+        <div>Create an account</div>
+      </div>
+
+      <form class="form-box" action="/action_page.php">
+        <div class="form-section">
+          <label>
+            <b>Full name</b>
+          </label>
+          <input class="form-input form-b-space" type="text" placeholder="Your name" name="fulname" required>
+
+          <label>
+            <b>Email</b>
+          </label>
+          <input class="form-input form-b-space" type="email" placeholder="@gmail.com" name="eml" required>
+
+          <label>
+            <b>Telephone</b>
+          </label>
+          <input class="form-input form-b-space" type="tel" placeholder="+234" name="psw" required>
+
+          <label>
+            <b>Password</b>
+          </label>
+          <input class="form-input" type="password" placeholder="Enter Password" name="psw" required>
+
+          <div class="sign-btn-box">
+            <button class="sign-btn" type="submit">Sign up</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="form-box">
+        <button onclick="closeModalTwo()" type="button" class="btn-red">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <footer>
+    <i class="fa fa-copyright"></i>
+    <div class="footer-text">House of jiro media concepts</div>
+  </footer>
+
+  <script src="./js/login.js"></script>
+  <script>
+    window.onscroll = function () { myFunction() };
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+  </script>
+</body>
+
+</html>
