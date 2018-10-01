@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>stack-lite</title>
+  <title>Fast-Food-Fast</title>
   <link rel="stylesheet" type="text/css" href="../UI/css/style.css">
   <link rel="stylesheet" type="text/css" href="../UI/css/modal.css">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -29,7 +29,9 @@
         </div>
       </div>
       <div id="auth-box">
-        <a href="./cart.html"><i class="material-icons cart-icon">shopping_cart</i></a>
+        <a href="./cart.html">
+          <i class="material-icons cart-icon">shopping_cart</i>
+        </a>
         <div class="btn" onclick="openModal()">Login/Sign up</div>
       </div>
     </div>
@@ -56,7 +58,7 @@
       <div class="meal-container">
         <div class="meal-box-header">Menu</div>
         <div class="meal-box-content">
-          
+
           <a href="./meal.html">
             <div class="meal-single">
               <div class="meal-img"></div>
@@ -223,29 +225,40 @@
       <form class="form-box" action="/action_page.php">
         <div class="form-section">
           <label>
-            <b>Full name</b>
+            <b>First name</b>
           </label>
-          <input class="form-input form-b-space" type="text" placeholder="Your name" name="fulname" required>
+          <input class="form-input form-b-space" id="fname" type="text" placeholder="First name" name="firstname" required>
+
+          <label>
+            <b>Last name</b>
+          </label>
+          <input class="form-input form-b-space" id="lname" type="text" placeholder="Last name" name="lastname" required>
 
           <label>
             <b>Email</b>
           </label>
-          <input class="form-input form-b-space" type="email" placeholder="Enter your email" name="eml" required>
+          <input class="form-input form-b-space" id="email" type="email" placeholder="Enter your email" name="eml" required>
 
           <label>
             <b>Telephone</b>
           </label>
-          <input class="form-input form-b-space" type="tel" placeholder="+234" name="psw" required>
+          <input class="form-input form-b-space" id="telephone" type="tel" placeholder="+234" name="psw" required>
 
           <label>
             <b>Password</b>
           </label>
-          <input class="form-input" type="password" placeholder="Enter Password" name="psw" required>
+          <input class="form-input" id="password" type="password" placeholder="Enter Password" name="psw" required>
 
           <div class="sign-btn-box">
-            <button class="sign-btn" type="submit">Sign up</button>
+            <button class="sign-btn" id="sign-btn" type="submit">Sign up</button>
           </div>
         </div>
+        <div id="info" class="server-info" style="display: none;">
+          <div class="modal-area">
+            <span class="cancel">&times;</span>
+            <div id="modal-info-panel"></div>
+          </div>
+      </div>
       </form>
 
       <div class="form-box">
@@ -261,6 +274,7 @@
   </footer>
 
   <script src="./js/login.js"></script>
+  <script src="./js/signup.js"></script>
   <script>
     window.onscroll = function () { myFunction() };
     var header = document.getElementById("myHeader");
@@ -272,7 +286,6 @@
         header.classList.remove("sticky");
       }
     }
-
   </script>
 </body>
 

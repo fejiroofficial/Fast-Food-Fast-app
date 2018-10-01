@@ -11,6 +11,25 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+.modal-area {
+    display: flex;
+    background-color: #281b1b;
+    height: 24px;
+}
+
+.cancel {
+    color: #e62e22;
+    font-weight: bold;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.modal-info-panel {
+    padding-left: 10px;
+    color: #e62e22;
+    font-weight: bold;
+}
+
 .modal-box-content {
     margin: auto;
     background-color: #fff;
