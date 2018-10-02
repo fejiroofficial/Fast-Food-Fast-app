@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>stack-lite</title>
+  <title>Fast-Food-Fast</title>
   <link rel="stylesheet" type="text/css" href="../UI/css/style.css">
   <link rel="stylesheet" type="text/css" href="../UI/css/modal.css">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -25,11 +25,6 @@
           </div>
       </div>
       <div id="auth-box">
-        <a href="./cart.html"><i class="material-icons cart-icon">shopping_cart</i></a>
-        <div class="prof-name-box">
-          <i class="material-icons acct-icon">account_circle</i>
-          <div id="prof-name"><a href="./user.html"> Tholle Mayer </a></div>
-        </div>
 
       </div>
     </div>
@@ -75,6 +70,20 @@
   <i class="fa fa-copyright"></i>
   <div class="footer-text">House of jiro media concepts</div>
 </footer>
+
+<script src="./js/reload.js"></script>
+<script>
+    window.onscroll = function () { myFunction() };
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 </body>
 
 </html>
