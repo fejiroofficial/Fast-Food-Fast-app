@@ -4,6 +4,7 @@ const lname = document.getElementById('lname');
 const mailSign = document.getElementById('email');
 const tel = document.getElementById('telephone');
 const passSign = document.getElementById('password');
+const modal = document.getElementById('info');
 
 const testEmail = (email) => {
   const emailregex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -12,11 +13,11 @@ const testEmail = (email) => {
 
 signupBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  let firstName = fname.value;
-  let lastName = lname.value;
-  let email = mailSign.value;
+  const firstName = fname.value;
+  const lastName = lname.value;
+  const email = mailSign.value;
   const telephone = tel.value;
-  let password = passSign.value;
+  const password = passSign.value;
 
   if (!firstName || !lastName || !password || !email || !telephone) {
     modal.style.display = 'block';
@@ -48,18 +49,17 @@ signupBtn.addEventListener('click', (e) => {
           localStorage.setItem('jwtoken', data.token);
           modal.style.display = "block";
           document.getElementById('modal-info-panel').innerHTML = data.message;
-          // window.location.assign('../index.html');
         })
         .catch(err => console.log(err));
     });
 });
-const modal = document.getElementById('info');
-const span = document.getElementsByClassName("cancel")[0];
-span.onclick = function () {
-  modal.style.display = "none";
+
+const span = document.getElementsByClassName('cancel')[0];
+span.onclick = () => {
+  modal.style.display = 'none';
 }
-window.onclick = function (event) {
+window.onclick = (event) => {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
-}
+};

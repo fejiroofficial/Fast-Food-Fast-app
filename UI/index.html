@@ -186,18 +186,24 @@
           class="avatar">
       </div>
 
-      <form class="form-box" action="/action_page.php">
+      <form class="form-box" name="loginForm" method = 'POST' action="#">
         <div class="form-section">
           <label>
             <b>Email</b>
           </label>
-          <input class="form-input form-b-space" type="email" placeholder="Enter your email" name="eml" required>
+          <input class="form-input form-b-space" id="log-email" type="email" placeholder="Enter your email" name="eml" required>
           <label>
             <b>Password</b>
           </label>
-          <input class="form-input" type="password" placeholder="Enter Password" name="psw" required>
+          <input class="form-input" id="log-password" type="password" placeholder="Enter Password" name="psw" required>
           <div class="sign-btn-box">
-            <button class="sign-btn" type="submit">Login</button>
+            <button class="sign-btn" id="log-btn" type="submit">Login</button>
+          </div>
+        </div>
+        <div id="log-info" class="server-info" style="display: none;">
+          <div class="modal-log-area">
+            <span class="cancel-log">&times;</span>
+            <div id="modal-info"></div>
           </div>
         </div>
       </form>
@@ -258,7 +264,7 @@
             <span class="cancel">&times;</span>
             <div id="modal-info-panel"></div>
           </div>
-      </div>
+        </div>
       </form>
 
       <div class="form-box">
@@ -273,8 +279,10 @@
     <div class="footer-text">House of jiro media concepts</div>
   </footer>
 
-  <script src="./js/login.js"></script>
+  <script src="./js/modalController.js"></script>
   <script src="./js/signup.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/reload.js"></script>
   <script>
     window.onscroll = function () { myFunction() };
     var header = document.getElementById("myHeader");

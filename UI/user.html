@@ -29,13 +29,6 @@
         </div>
       </div>
       <div id="auth-box">
-        <a href="./cart.html"><i class="material-icons cart-icon">shopping_cart</i></a>
-        <div class="prof-name-box">
-          <i class="material-icons acct-icon">account_circle</i>
-          <div id="prof-name">
-            <a href="./user.html"> Tholle Mayer </a>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -43,47 +36,13 @@
     <div class="home-hero"></div>
 
     <div class="admin-top">
-      <div class="admin-top-header">Tholle Mayer</div>
+      <div class="admin-top-header" id="user-name"></div>
     </div>
 
     <div class="user-content-box">
       <div class="user-content">
-        <div class="acct-box">
-          <div class="sec-header">Account Settings</div>
-          <div class="sec-content">
-            <p>This is your private area. Please keep your information up to date.</p>
+        <div class="acct-box" id="user-acct-box">
 
-            <form action="#" method="post" class="user-form">
-              <h5 class="form-h5">Personal information</h5>
-              <div class="field">
-                <label class="name-label">Full name</label>
-                <div class="control">
-                  <input type="text" id="info_fullname" name="fullname-form" required="required" class="input" value="Tholle Mayer">
-                </div>
-              </div>
-
-              <h5 class="form-h5">Contact Details</h5>
-              <div class="field">
-                <label class="email-label"> Email</label>
-                <div class="control">
-                  <input type="email" id="info_email" name="personal_email" required="required" class="input" value="mayer8@gmail.com">
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="tel-label">Telephone</label>
-                <div class="control">
-                  <input type="tel" id="info_tel" name="personal_tel" required="required" class="input" value="+2348138776199">
-                </div>
-              </div>
-
-              <div class="btn-field">
-                <div class="control">
-                  <button type="submit" id="savePersonalData" name="personal_save]" class="data-btn">Save Changes</button>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
         <div class="recent-box">
           <div class="sec-header">Recent Orders</div>
@@ -128,6 +87,20 @@
     <i class="fa fa-copyright"></i>
     <div class="footer-text">House of jiro media concepts</div>
   </footer>
+
+  <script src="./js/reload.js"></script>
+<script>
+    window.onscroll = function () { myFunction() };
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 </body>
 
 </html>
