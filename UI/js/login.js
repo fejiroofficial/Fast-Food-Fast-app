@@ -2,7 +2,6 @@ const loginForm = document.forms['loginForm'];
 const mailLog = document.getElementById('log-email');
 const passLog = document.getElementById('log-password');
 const logModal = document.getElementById('log-info');
-const authBox = document.getElementById('auth-box');
 
 const testLogEmail = (email) => {
   const emailregex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;

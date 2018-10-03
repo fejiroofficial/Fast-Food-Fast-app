@@ -4,7 +4,7 @@
 html, body, .container {
     margin: 0px;
     padding: 0px;
-    min-height: 794px;
+    min-height: 692px;
     width: 100%;
     min-width: 1235px;
     font-family: "Muli", "Merriweather", "Georgia", serif;
@@ -170,6 +170,11 @@ html, body, .container {
   cursor: pointer;
   font-weight: 600;
   outline: none;    
+}
+
+.meal-btn {
+  margin-bottom: 15px;
+  color: #5b6163;
 }
 
 .btn-space {
@@ -767,4 +772,141 @@ a {
 
 #click-me:hover {
     color: #e62e22;
+}
+
+@media (max-width: 375px) {
+    .top-nav {
+        height: 225px;
+        padding-left: inherit;
+    }
+
+    .logo {
+        background-size: cover;
+        width: 314px;
+        height: 257px;
+    }
+
+    .meal-single {
+        height: 472px;
+        width: -webkit-fill-available;
+        display: inline-table;
+    }
+
+    .meal-info {
+        width: inherit;
+    }
+    
+    .modal-class-log {
+        height: 101px;
+        width: inherit;
+        display: flex;
+        font-size: xx-large;
+    }
+
+    .modal-box-content {
+        height: 747px;
+    }
+
+    .btn {
+        width: 233px;
+        height: 69px;
+    }
+
+    .sign-btn {
+        height: 56px;
+        font-size: 23px;
+    }
+
+    .btn-red {
+        height: 61px;
+        width: 109px;
+        font-size: x-large;
+    }
+
+    .meal-info-title, .meal-info-price, .meal-info-cart {
+        height: 158px;
+        color: #323232;
+        width: inherit;
+        font-size: 39px;
+        font-weight: bold;
+        padding-top: 59px;
+        background-color: whitesmoke;
+    }
+
+    .form-input {
+        height: 81px;
+        font-size: x-large;
+    }
+
+    label {
+        font-size: 30px;
+    }
+
+    .meal-box-content {
+        display: block;
+    }
+
+    .meal-box-header {
+        font-size: 38px;
+    }
+
+    .meal-img {
+        background-size: cover;
+        width: auto;
+    }
+
+    .we-deliver {
+        height: 491px;
+        width: 100%;
+        padding-top: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: -webkit-center;
+        background-color: #f6f6f6;
+    }  
+    
+    .we-deliver-in {
+    height: 515px;
+    width: 1144px;
+    display: flex;
+    }    
+    
+    .deliver-box {
+        height: inherit;
+        width: 358px;
+        margin-left: 10px;
+    }
+
+    .deliver-img {
+        height: 355px;
+    }
+
+    .deliver-title {
+        height: 60px;
+        font-size: xx-large;
+    }
+
+    .menu {
+        margin-top: 83px;
+    }
+
+    .logo-box {
+        width: 790px;
+    }
+
+    .menu-list-ul {
+        font-size: xx-large;
+    }
+
+    #auth-box {
+        min-width: 340px;
+        font-size: xx-large;
+        font-weight: bold;
+        padding-left: 0px;
+        margin-top: 93px;
+    }
+
+    .material-icons {
+        font-size: -webkit-xxx-large;
+    }
 }

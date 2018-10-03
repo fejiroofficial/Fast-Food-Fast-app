@@ -11,8 +11,8 @@ const testEmail = (email) => {
   return emailregex.test(email);
 };
 
-signupBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+signupBtn.addEventListener('click', (event) => {
+  event.preventDefault();
   const firstName = fname.value;
   const lastName = lname.value;
   const email = mailSign.value;
