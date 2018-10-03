@@ -217,7 +217,7 @@ html, body, .container {
 
 .we-deliver-in {
     height: 250px;
-    width: 600px;
+    width: 662px;
     display: flex;
 }
 
@@ -468,30 +468,32 @@ html, body, .container {
 }
 
 .meal-info {
-    height: inherit;
+    height: fit-content;
     width: 248px;
 }
 
 .meal-info-title, .meal-info-price, .meal-info-cart {
     height: 50px;
-    color: #323232;
+    color: #ffffff;
     width: inherit;
     font-size: 19px;
     font-weight: bold;
     padding-top: 12px;
-    background-color: whitesmoke
+    background-color: #a42715;
 }
 
 .meal-info-price {
-    color: #f94705;
+    color: #FFEB3B;
+    font-size: 25px;
 }
 
 .meal-info-cart {
-    background-color: #b4a8a6;
+    background-color: #ffffff;
     cursor: pointer;
     border-top-style: solid;
     border-top-width: thin;
     border-color: lightgray;
+    color: #3c3434;
 }
 
 .meal-info-cart:hover {
@@ -500,12 +502,11 @@ html, body, .container {
 }
 
 .meal-single {
-    height: 150px;
-    width: 398px;
-    margin-right: 25px;
+    height: 415px;
+    width: 247px;
+    margin-left: 25px;
     margin-bottom: 25px;
-    display: flex;
-    box-shadow: 0px 0px 1px 1px lightgrey;
+    box-shadow: 0px 0px 14px 0px #a42715;
     background-color: white;
 }
 
@@ -514,10 +515,10 @@ html, body, .container {
 }
 
 .meal-img {
-    height: inherit;
-    width: 150px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx67fjcn2WFalc0g6vc-8TG0qaEwXtZbw5uBS5LBT-KYTHJz7ZSg');
-    background-size: contain;
+    height: 266px;
+    width: -webkit-fill-available;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx67fjcn2WFalc0g6vc-8TG0qaEwXtZbw5uBS5LBT-KYTHJz7ZSg);
+    background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
 }
@@ -768,3 +769,12 @@ a {
 #click-me:hover {
     color: #e62e22;
 }
+
+
+
+@media (max-width: 375px) {
+    label {
+        font-size: 60px;
+    }
+}
+
