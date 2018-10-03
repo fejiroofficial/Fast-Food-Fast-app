@@ -11,20 +11,20 @@
     background-color: rgba(0,0,0,0.4);
 }
 
-.modal-area, .modal-log-area {
+.modal-area, .modal-log-area, .menu-modal-area {
     display: flex;
     background-color: #281b1b;
     height: 24px;
 }
 
-.cancel, .cancel-log {
+.cancel, .cancel-log, .cancel-info {
     color: #e62e22;
     font-weight: bold;
     margin-left: 6px;
     cursor: pointer;
 }
 
-#modal-info-panel, #modal-info {
+#modal-info-panel, #modal-info, #meal-info-panel {
     padding-left: 10px;
     color: #e62e22;
     font-weight: bold;
