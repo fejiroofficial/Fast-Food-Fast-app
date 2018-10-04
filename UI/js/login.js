@@ -8,6 +8,17 @@ const testLogEmail = (email) => {
   return emailregex.test(email);
 };
 
+
+/**
+ * This method adds an event listener to the login form
+ *
+ * @method
+ * @name addEventListener
+ * @param {string} submit browser event.
+ * @param {function} function  the function to run when the event occurs
+ * @returns {Object} data returned from the server
+ */
+
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = mailLog.value;
@@ -27,7 +38,7 @@ loginForm.addEventListener('submit', (event) => {
     logModal.style.display = 'block';
     return document.getElementById('modal-info').innerHTML = 'Your Email is invalid!';
   }
-
+  document.getElementById('loader').style.display = 'block';
   fetch('https://food-fast-app.herokuapp.com/api/v1/auth/login', {
     method: 'post',
     headers: {
@@ -41,10 +52,10 @@ loginForm.addEventListener('submit', (event) => {
   })
     .then(response => response.json())
     .then((data) => {
+      document.getElementById('loader').style.display = 'none';     
       logModal.style.display = 'block';
       document.getElementById('modal-info').innerHTML = data.message;
       localStorage.setItem('jwtoken', data.token);
-      localStorage.setItem('fullname', data.fullname);
       localStorage.setItem('firstname', data.firstname);
       localStorage.setItem('lastname', data.lastname);
       localStorage.setItem('email', data.email);
@@ -53,7 +64,9 @@ loginForm.addEventListener('submit', (event) => {
         document.location.reload();
       }
     })
-    .catch(err => console.log(err));
+    .catch((err) => {
+      throw Error(err);
+    });
 });
 const loginSpan = document.getElementsByClassName('cancel-log')[0];
 loginSpan.onclick = () => {

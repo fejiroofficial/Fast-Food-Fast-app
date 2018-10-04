@@ -4,6 +4,17 @@ const price = document.getElementById('foodPrice');
 const foodAddress = document.getElementById('foodUrl');
 const mealModal = document.getElementById('meal-log-info');
 
+
+/**
+ * This method adds an event listener to the meal form
+ *
+ * @method
+ * @name addEventListener
+ * @param {string} submit browser event.
+ * @param {function} function  the function to run when the event occurs
+ * @returns {Object} data returned from the server
+ */
+
 mealForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const foodName = food.value;
@@ -29,12 +40,13 @@ mealForm.addEventListener('submit', (event) => {
     }),
   })
     .then(response => response.json())
-    .then((data) => {
-      console.log(data);
+    .then((responseObject) => {
       mealModal.style.display = 'block';
-      document.getElementById('meal-info-panel').innerHTML = data.message;
+      document.getElementById('meal-info-panel').innerHTML = responseObject.message;
     })
-    .catch(err => console.log(err));
+    .catch((err) => {
+      throw Error(err);
+    });
 });
 const loginSpan = document.getElementsByClassName('cancel-info')[0];
 loginSpan.onclick = () => {

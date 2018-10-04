@@ -6,10 +6,21 @@ const tel = document.getElementById('telephone');
 const passSign = document.getElementById('password');
 const modal = document.getElementById('info');
 
+/** this is a function that tests for email input using regex*/
 const testEmail = (email) => {
   const emailregex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   return emailregex.test(email);
 };
+
+/**
+ * This method adds an event listener to the signup form button
+ *
+ * @method
+ * @name addEventListener
+ * @param {string} click browser event.
+ * @param {function} function  the function to run when the event occurs
+ * @returns {Object} data returned from the server
+ */
 
 signupBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -50,7 +61,9 @@ signupBtn.addEventListener('click', (event) => {
           modal.style.display = "block";
           document.getElementById('modal-info-panel').innerHTML = data.message;
         })
-        .catch(err => console.log(err));
+        .catch((err) => {
+          throw Error(err);
+        });
     });
 });
 
