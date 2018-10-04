@@ -12,3 +12,4 @@ function modifyModal() {
   document.getElementById('modal').style.display = 'none';
   return document.getElementById('modal-two').style.display = 'block';
 }
+

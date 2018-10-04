@@ -27,7 +27,7 @@ loginForm.addEventListener('submit', (event) => {
     logModal.style.display = 'block';
     return document.getElementById('modal-info').innerHTML = 'Your Email is invalid!';
   }
-
+  document.getElementById('loader').style.display = 'block';
   fetch('https://food-fast-app.herokuapp.com/api/v1/auth/login', {
     method: 'post',
     headers: {
@@ -41,10 +41,10 @@ loginForm.addEventListener('submit', (event) => {
   })
     .then(response => response.json())
     .then((data) => {
+      document.getElementById('loader').style.display = 'none';     
       logModal.style.display = 'block';
       document.getElementById('modal-info').innerHTML = data.message;
       localStorage.setItem('jwtoken', data.token);
-      localStorage.setItem('fullname', data.fullname);
       localStorage.setItem('firstname', data.firstname);
       localStorage.setItem('lastname', data.lastname);
       localStorage.setItem('email', data.email);

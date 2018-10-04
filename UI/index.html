@@ -29,8 +29,10 @@
         </div>
       </div>
       <div id="auth-box">
-        <a href="./cart.html">
-          <i class="material-icons cart-icon">shopping_cart</i>
+        <a class="shopping-cart" href="./cart.html">
+          <div class="la-cart">
+            <i class="fa fa-shopping-cart la-cart" ></i>
+          </div>
         </a>
         <div class="btn" onclick="openModal()">Login/Sign up</div>
       </div>
@@ -57,96 +59,9 @@
     <div class="meal-box">
       <div class="meal-container">
         <div class="meal-box-header">Menu</div>
+        <span><img id="loader" src="./img/25.gif"></span>
         <div class="meal-box-content">
-
-          <a href="./meal.html">
-            <div class="meal-single">
-              <div class="meal-img"></div>
-              <div class="meal-info">
-                <div class="meal-info-title">Cheese Bugger</div>
-                <div class="meal-info-price">
-                  <span>₦</span>500</div>
-                <div class="meal-info-cart">
-                  <div class="to-cart-btn">Add to cart</div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="./meal.html">
-            <div class="meal-single">
-              <div class="meal-img"></div>
-              <div class="meal-info">
-                <div class="meal-info-title">Cheese Bugger</div>
-                <div class="meal-info-price">
-                  <span>₦</span>500</div>
-                <div class="meal-info-cart">
-                  <div class="to-cart-btn">Add to cart</div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="./meal.html">
-            <div class="meal-single">
-              <div class="meal-img"></div>
-              <div class="meal-info">
-                <div class="meal-info-title">Cheese Bugger</div>
-                <div class="meal-info-price">
-                  <span>₦</span>500</div>
-                <div class="meal-info-cart">
-                  <div class="to-cart-btn">Add to cart</div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="./meal.html">
-            <div class="meal-single">
-              <div class="meal-img"></div>
-              <div class="meal-info">
-                <div class="meal-info-title">Cheese Bugger</div>
-                <div class="meal-info-price">
-                  <span>₦</span>500</div>
-                <div class="meal-info-cart">
-                  <div class="to-cart-btn">Add to cart</div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="./meal.html">
-            <div class="meal-single">
-              <div class="meal-img"></div>
-              <div class="meal-info">
-                <div class="meal-info-title">Cheese Bugger</div>
-                <div class="meal-info-price">
-                  <span>₦</span>500</div>
-                <div class="meal-info-cart">
-                  <div class="to-cart-btn">Add to cart</div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="./meal.html">
-            <div class="meal-single">
-              <div class="meal-img"></div>
-              <div class="meal-info">
-                <div class="meal-info-title">Cheese Bugger</div>
-                <div class="meal-info-price">
-                  <span>₦</span>500</div>
-                <div class="meal-info-cart">
-                  <div class="to-cart-btn">Add to cart</div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <div class="view-more">
-            <div class="view-more-btn">VIEW MORE >></div>
-          </div>
-
+           
         </div>
       </div>
     </div>
@@ -198,6 +113,7 @@
           <input class="form-input" id="log-password" type="password" placeholder="Enter Password" name="psw" required>
           <div class="sign-btn-box">
             <button class="sign-btn" id="log-btn" type="submit">Login</button>
+            <span><img id="log-loader" style="display: none" src="./img/25.gif"></span>
           </div>
         </div>
         <div id="log-info" class="server-info" style="display: none;">
@@ -280,9 +196,11 @@
   </footer>
 
   <script src="./js/modalController.js"></script>
+  <script src="./js/logOut.js"></script>
   <script src="./js/signup.js"></script>
   <script src="./js/login.js"></script>
   <script src="./js/reload.js"></script>
+  <script src="./js/getMenu.js"></script>
   <script>
     window.onscroll = function () { myFunction() };
     var header = document.getElementById("myHeader");
