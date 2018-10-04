@@ -13,7 +13,6 @@
 
 .modal-area, .modal-log-area, .menu-modal-area {
     display: flex;
-    background-color: #281b1b;
     height: 24px;
 }
 
@@ -32,11 +31,11 @@
 
 .modal-box-content {
     margin: auto;
+    width: 600px;
     background-color: #fff;
     position: relative;
     padding: 0;
     outline: 0;
-    width: 600px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
 .avatar-hero {
@@ -131,6 +130,53 @@ form {
     text-align: -webkit-center;
     font-weight: 600;
     padding-top: 28px;
+}
+
+footer {
+    height: 177px;
+    font-size: 40px;
+}
+
+@media (max-width: 375px) {
+    .avatar {
+        width: 58%;
+        border-radius: 50%;
+        margin-top: 111px;
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    .modal-area, .modal-log-area {
+        height: 72px;
+    }
+
+
+
+    .modal-class-one {
+        height: 116px
+    }
+
+    .acct-head {
+        height: 133px;
+        font-size: -webkit-xxx-large;
+    }
+
+    .modal-class-log {
+        height: 158px;
+        width: inherit;
+        display: flex;
+        font-size: -webkit-xxx-large;
+    }
+
+    .form-box {
+        padding: 0.01em 16px;
+        font-size: -webkit-xxx-large;
+    }
+
+    .modal-box-content {
+        height: 1821px;
+        width: inherit;
+    }
 }
 
 

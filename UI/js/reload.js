@@ -3,15 +3,22 @@ window.onload = () => {
   if (token === 'null' || token === 'undefined') {
     console.log('you dont have an account, please signup');
   } else if (token) {
-    const fullname = localStorage.getItem('fullname');
     const firstname = localStorage.getItem('firstname');
     const lastname = localStorage.getItem('lastname');
     const email = localStorage.getItem('email');
     const telephone = localStorage.getItem('telephone');
-    document.getElementById('auth-box').innerHTML = `<a href="./cart.html"><i class="material-icons cart-icon">shopping_cart</i></a>
+    document.getElementById('auth-box').innerHTML = `<a class="shopping-cart" href="./cart.html">
+    <div class="la-cart">
+      <i class="fa fa-shopping-cart la-cart" ></i>
+    </div>
+  </a>
 <div class="prof-name-box">
-<i class="material-icons acct-icon">account_circle</i>
-<div id="prof-name"><a href="./user.html">${fullname}</a></div>
+<i class="fa fa-user-circle-o" id="user-circle"></i>
+<div id="prof-name"><a href="./user.html">${firstname}</a></div>
+<div class="dropdown-content">
+<div class="drop-item"><a id="profile-link" href="./user.html">Profile</a></div>
+<div class="drop-item" onclick="logOut()">Sign out</div>
+</div>
 </div>`;
     document.getElementById('user-name').innerHTML = `${fullname}`;
 
