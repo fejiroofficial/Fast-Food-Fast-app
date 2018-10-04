@@ -6,13 +6,26 @@
 
 .admin-top-header {
     height: inherit;
-    width: 200px;
+    width: 240px;
     font-size: 24px;
     padding-top: 24px;
     color: #aba4a4;
     font-weight: bold;
 }
 
+.admin-meal-box {
+    height: 500px;
+    width: inherit;
+    padding-top: 70px;
+    text-align: -webkit-center;
+}
+
+.meal-form {
+    height: 317px;
+    width: 463px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
 .admin-content-box, .user-content-box {
     min-height: 500px;
     width: 100%;
@@ -124,8 +137,17 @@
 
 input {
     font-size: 15px;
-    width: 186px;
+    width: 425px;
+    height: 31px;
     padding-left: 5px;
+    margin-bottom: 13px;
+}
+
+input[id =info-firstname], input[id =info-lastname],input[id =info-email], input[id =info-tel] {
+    font-size: 15px;
+    width: 178px;
+    padding-left: 5px;
+    margin-bottom: 13px;
 }
 
 .form-h5 {
@@ -225,8 +247,10 @@ input {
 }
 #sign-in-form {
     margin: 0 auto;
-    height: 180px;
+    min-height: 180px;
     width: 425px;
+    text-align: left;
+    display: grid;
 }
 
 #btn-container {
