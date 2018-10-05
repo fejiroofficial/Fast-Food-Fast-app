@@ -29,7 +29,7 @@ signupBtn.addEventListener('click', (event) => {
     return document.getElementById('modal-info-panel').innerHTML = 'Your Email is invalid!';
   }
 
-  fetch('https://food-fast-app.herokuapp.com/api/v1/auth/signup', {
+  fetch('https://pacific-reaches-76232.herokuapp.com/api/v1/auth/signup', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',

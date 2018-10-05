@@ -28,7 +28,7 @@ loginForm.addEventListener('submit', (event) => {
     return document.getElementById('modal-info').innerHTML = 'Your Email is invalid!';
   }
   document.getElementById('loader').style.display = 'block';
-  fetch('https://food-fast-app.herokuapp.com/api/v1/auth/login', {
+  fetch('https://pacific-reaches-76232.herokuapp.com/api/v1/auth/login', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',

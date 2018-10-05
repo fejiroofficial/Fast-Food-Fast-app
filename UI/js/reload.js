@@ -8,7 +8,7 @@ window.onload = () => {
     const email = localStorage.getItem('email');
     const telephone = localStorage.getItem('telephone');
     document.getElementById('auth-box').innerHTML = `<a class="shopping-cart" href="./cart.html">
-    <div class="la-cart">
+    <div class="la-cart" id="cart-btn">
       <i class="fa fa-shopping-cart la-cart" ></i>
     </div>
   </a>
@@ -20,7 +20,8 @@ window.onload = () => {
 <div class="drop-item" onclick="logOut()">Sign out</div>
 </div>
 </div>`;
-    document.getElementById('user-name').innerHTML = `${fullname}`;
+
+    document.getElementById('user-name').innerHTML = `${firstname} ${lastname}`;
 
     document.getElementById('user-acct-box').innerHTML =  ` <div class="sec-header">Account Settings</div>
     <div class="sec-content">

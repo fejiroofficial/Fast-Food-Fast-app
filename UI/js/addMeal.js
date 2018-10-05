@@ -15,7 +15,7 @@ mealForm.addEventListener('submit', (event) => {
     return document.getElementById('meal-info-panel').innerHTML = 'None of the fields can be empty';
   }
 
-  fetch('https://food-fast-app.herokuapp.com/api/v1/menu', {
+  fetch('https://pacific-reaches-76232.herokuapp.com/api/v1/menu', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
@@ -30,7 +30,6 @@ mealForm.addEventListener('submit', (event) => {
   })
     .then(response => response.json())
     .then((data) => {
-      console.log(data);
       mealModal.style.display = 'block';
       document.getElementById('meal-info-panel').innerHTML = data.message;
     })

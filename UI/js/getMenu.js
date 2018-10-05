@@ -3,10 +3,10 @@ window.addEventListener('load', (event) => {
   const meal = document.querySelector('div.meal-box-content');
 
   const load = (foodMenu) => {
-    foodMenu.forEach((element) => {
-      const itemName = element.item_name;
-      const price = element.price;
-      const foodUrl = element.food_url;
+    foodMenu.forEach((eachFood) => {
+      const itemName = eachFood.item_name;
+      const price = eachFood.price;
+      const foodUrl = eachFood.food_url;
       const foodOnMenu = `
       <div class="meal-single">
       <div class="meal-img" style="background-image: url(${foodUrl})"></div>
@@ -15,7 +15,7 @@ window.addEventListener('load', (event) => {
         <div class="meal-info-price">
           <span>₦</span>${price}</div>
         <div class="meal-info-cart">
-          <div class="to-cart-btn">Add to cart</div>
+          <div class="to-cart-btn" id=${eachFood.id} onclick="addToCart(this)">Add to cart</div>
         </div>
       </div>
     </div>`;
@@ -24,7 +24,7 @@ window.addEventListener('load', (event) => {
     });
   };
   document.getElementById('loader').style.display = 'block';
-  fetch('https://food-fast-app.herokuapp.com/api/v1/menu', {
+  fetch('https://pacific-reaches-76232.herokuapp.com/api/v1/menu', {
     method: 'get',
     headers: {
       'Content-Type': 'application/json',
